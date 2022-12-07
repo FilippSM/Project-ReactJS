@@ -1,11 +1,8 @@
-import s from './Profile.module.css';
+import s from './MyPosts.module.css';
 
-const Profile = () => {
-    return <div className={s.content}>
-        <img src='https://wallpaperaccess.com/full/697601.jpg'></img>
-        <div>
-            ava + desrition
-        </div>
+const MyPosts = () => {
+    return (
+    <div>
         <div>
             my posts
             <div>
@@ -20,7 +17,7 @@ const Profile = () => {
                 </div>
             </div>
         </div>
-    </div>
+    </div>)
 }
 
-export default Profile;
+export default MyPosts;
