@@ -9,6 +9,9 @@ const Post = (props) => {
                 <div>
                     <span>Like</span>
                 </div>
+                <div>
+                    <span>Unlike: {props.unlike}</span>
+                </div>
             </div>
         </div>
     )
