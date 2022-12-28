@@ -1,13 +1,18 @@
 .dialogs {
     display: grid;
     grid-template-columns: 2fr 10fr;
+
 }
 
-.dialogsItems .dialog {
+.dialog a{
+    text-decoration: none;
+}
+
+.dialogsItems {
     padding: 10px;
 }
 
-.dialogsItems .active {
+.dialogsItems .active a{
     color: goldenrod;
     font-weight: bold;
 }
