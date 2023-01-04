@@ -1,15 +1,11 @@
 import MyPosts from './MyPosts/MyPosts';
 import s from './Profile.module.css';
+import ProfileInfo from "./ProfileInfo/ProfileInfo";
 
 const Profile = () => {
     return <div>
-        <div className={s.img}>
-            <img src='https://wallpaperaccess.com/full/697601.jpg'></img>
-        </div>
-        <div>
-            ava + desrition
-        </div>
-        <MyPosts />
+        <ProfileInfo/>
+        <MyPosts/>
     </div>
 }
 
