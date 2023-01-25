@@ -3,31 +3,14 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import state from './redux/state';
 
-let dialogs = [
-    {id: 1, name: 'Dimych'},
-    {id: 2, name: 'Illidan'},
-    {id: 3, name: 'Rogan'},
-    {id: 4, name: 'Garosh'},
-    {id: 5, name: 'Jupiter'}
-]
-
-let messages = [
-    {id: 1, message: 'Hi'},
-    {id: 2, message: "What's new?"},
-    {id: 3, message: 'By.'}
-]
-
-let posts = [
-    {id: 1, message: 'Hi, how are you?', likesCount: 15},
-    {id: 2, message: 'It\'s my first post', likesCount: 20}
-]
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App dialogs={dialogs} messages={messages} posts={posts}/>
-  </React.StrictMode>
+    <React.StrictMode>
+        <App state={state}/>
+    </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
