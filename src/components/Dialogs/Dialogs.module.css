@@ -12,18 +12,32 @@
     padding: 10px;
 }
 
-/*.dialogsItems .active a{*/
-/*    color: goldenrod;*/
+.dialog img {
+    width: 30px;
+    height: 30px;
+    /*border-radius: 10px;*/
+}
+
+
+/*.dialogsItems .active {*/
+/*    background-color: orange;*/
 /*    font-weight: bold;*/
 /*}*/
 
+
 .messages {
+    display: grid;
+    grid-template-columns: 300px;
+
     padding: 10px;
 }
 .messages .message {
 
 }
-
+.messages .one {
+    text-align: right;
+    background-color: orange;
+}
 
 
 
