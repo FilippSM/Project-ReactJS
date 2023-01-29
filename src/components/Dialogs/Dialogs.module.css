@@ -19,10 +19,10 @@
 }
 
 
-/*.dialogsItems .active {*/
-/*    background-color: orange;*/
-/*    font-weight: bold;*/
-/*}*/
+/* .dialogsItems .active {
+   background-color: orange;
+   font-weight: bold;
+} */
 
 
 .messages {
@@ -34,9 +34,9 @@
 .messages .message {
 
 }
-.messages .one {
+.messages .two, .four {
     text-align: right;
-    background-color: orange;
+    /* background-color: orange; */
 }
 
 

@@ -1,5 +1,6 @@
 import s from './Navbar.module.css';
 import {NavLink} from "react-router-dom";
+import Sidebar from "./Sidebar/Sidebar";
 
 const setActive = ({isActive}) => (isActive ? s.active : s.item);
 
@@ -20,6 +21,7 @@ const Navbar = () => {
         <div className={s.item}>
             <NavLink to="/setting" className={setActive}>Settings</NavLink>
         </div>
+        <Sidebar/>
     </nav>
 }
 
