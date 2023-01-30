@@ -1,12 +1,14 @@
 import s from './../Navbar.module.css';
+import Post from "../../Profile/MyPosts/Post/Post";
 
-const Sidebar = () => {
+const Sidebar = (props) => {
+
     return <div className={s.sidebar}>
-        <h3>Friends</h3>
         <div>
             <div>
                 <img
                     src="https://icons.veryicon.com/png/o/miscellaneous/two-color-icon-library/user-286.png"/>
+                {props.name}
                 <div>
                     <span></span>
                 </div>
