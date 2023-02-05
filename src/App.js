@@ -11,23 +11,21 @@ import {BrowserRouter, Routes, Route} from "react-router-dom";
 const App = (props) => {
 
     return (
-        <BrowserRouter>
-            <div className='app-wrapper'>
-                <Header/>
-                <Navbar state={props.state.sidebar}/>
-                {/*<Navbar/>*/}
-                <div class='app-wrapper-content'>
-                    <Routes>
-                        {/*<Route path='/dialogs/' element={<DialogItems/>}/>*/}
-                        <Route path='/dialogs/*' element={<Dialogs state={props.state.dialogsPage}/>}/>
-                        <Route path='/profile' element={<Profile state={props.state.profilePage}/>}/>
-                        <Route path='/news' element={<News/>}/>
-                        <Route path='/music' element={<Music/>}/>
-                        <Route path='/setting' element={<Setting/>}/>
-                    </Routes>
-                </div>
+        <div className='app-wrapper'>
+            <Header/>
+            <Navbar state={props.state.sidebar}/>
+            {/*<Navbar/>*/}
+            <div class='app-wrapper-content'>
+                <Routes>
+                    {/*<Route path='/dialogs/' element={<DialogItems/>}/>*/}
+                    <Route path='/dialogs/*' element={<Dialogs state={props.state.dialogsPage}/>}/>
+                    <Route path='/profile' element={<Profile state={props.state.profilePage}/>}/>
+                    <Route path='/news' element={<News/>}/>
+                    <Route path='/music' element={<Music/>}/>
+                    <Route path='/setting' element={<Setting/>}/>
+                </Routes>
             </div>
-        </BrowserRouter>
+        </div>
     );
 }
 
